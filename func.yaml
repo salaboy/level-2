@@ -4,7 +4,7 @@ namespace: ""
 runtime: go
 registry: ""
 image: docker.io/salaboy/level-2:latest
-imageDigest: sha256:fdb7aa0efa8c5aa193f2db8d857af883fa201fef1b122388be058ce09b3e6c9c
+imageDigest: sha256:2d75aa269786a02390dcc93749ed522ea4eea2147579234a6e01338599d7a4bc
 build: local
 git:
   url: null
