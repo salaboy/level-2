@@ -6,10 +6,7 @@ registry: ""
 image: docker.io/salaboy/level-2:latest
 imageDigest: sha256:2d75aa269786a02390dcc93749ed522ea4eea2147579234a6e01338599d7a4bc
 build: local
-git:
-  url: null
-  revision: null
-  contextdir: null
+git: {}
 builder: gcr.io/paketo-buildpacks/builder:base
 builders:
   base: gcr.io/paketo-buildpacks/builder:base
@@ -22,7 +19,9 @@ volumes: []
 buildEnvs: []
 envs:
 - name: REDIS_HOST
-  value: 10.200.130.188:6379
+  value: "" # <hostname>:<port>
+- name: REDIS_PASSWORD
+  value: ""
 annotations: {}
 options: {}
 labels: []
